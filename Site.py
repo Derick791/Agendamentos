@@ -2,6 +2,7 @@ import streamlit as st
 from openpyxl import Workbook, load_workbook
 from pathlib import Path
 import pandas as pd
+import io
 
 # ============================
 # Configurações
@@ -179,3 +180,17 @@ else:
 
     st.write("### 📋 Lista completa de inscritos")
     st.dataframe(df.sort_values(["Treinamento", "Data", "Horário"]))
+    
+    st.markdown("---")
+st.subheader("📥 Baixar banco de dados")
+
+# Lê o arquivo Excel atual
+with open(ARQUIVO, "rb") as f:
+    data = f.read()
+
+st.download_button(
+    label="⬇️ Baixar inscrições (Excel)",
+    data=data,
+    file_name="inscricoes.xlsx",
+    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+)
