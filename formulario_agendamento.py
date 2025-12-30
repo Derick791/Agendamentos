@@ -14,7 +14,7 @@ SHEET_NAME = "InscricoesTreinamentos"   # nome do arquivo (documento) do Google 
 WORKSHEET_TITLE = "Inscricoes"          # nome da aba dentro da planilha
 
 # Se preferir abrir por ID da planilha, defina em Secrets: SHEET_ID = "..."
-SHEET_ID = "1996jJ_zFo6dsQ7xzkWJY72lCZsefPurzIQH2aa7R9cw"
+SHEET_ID = "1Mys9TFql3h-NxFWfFueHLTpb_njbfcCyKPocBvigM2s"
 
 DATAS_TREINAMENTO = {
     "B1 - Substituir Caçamba Recuperadora Tipo Ponte": {
