@@ -11,7 +11,8 @@ import io
 ARQUIVO = Path("inscricoes.xlsx")
 LIMITE_VAGAS = 4
 
-DDATAS_TREINAMENTO = {
+
+DATAS_TREINAMENTO = {
     "B1 - Substituir Caçamba Recuperadora Tipo Ponte": {
         "ADM (09-16h)": [
             "2026-01-05","2026-01-12","2026-01-19","2026-01-26",
@@ -63,6 +64,7 @@ DDATAS_TREINAMENTO = {
         ],
     },
 }
+
 # ============================
 # Funções
 # ============================
